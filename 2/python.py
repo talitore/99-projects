@@ -1,8 +1,7 @@
 print("Find Fibonacci's number to the Nth Digit!")
 print("Enter a number: (max 50)")
 digit = 0
-stop = False
-while not stop:
+while True:
 	digit = int(input())
 	if digit > 0 and digit < 51:
 		break

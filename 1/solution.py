@@ -3,8 +3,7 @@ MY_PI = "3.14159265358979323846264338327950288419716939937510"
 print("Find PI to the Nth Digit!")
 print("Enter a number: (max 50)")
 n = 0
-stop = False
-while not stop:
+while True:
 	n = int(input())
 	if n > 0 and n < 51:
 		break
