@@ -1,5 +1,5 @@
-length = int(input("Enter length of floor: "))
-width = int(input("Enter width of floor: "))
-cost = int(input("Enter cost of tile per sqft: "))
+length = float(input("Enter length of floor: "))
+width = float(input("Enter width of floor: "))
+cost = float(input("Enter cost of tile per sqft: "))
 
-print("Total cost: " + str((length * width * cost)))
+print("Total cost: " + '$%.2f' % (length * width * cost))

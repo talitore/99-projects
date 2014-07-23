@@ -1,8 +1,9 @@
 puts "Enter length of floor: "
-length = gets.chomp.to_i
+length = gets.chomp.to_f
 puts "Enter width of floor: "
-width = gets.chomp.to_i
+width = gets.chomp.to_f
 puts "Enter cost of tile per sqft: "
-cost = gets.chomp.to_i
+cost = gets.chomp.to_f
 
-puts "Total cost: " + (length * width * cost).to_s
+total = "$%.2f" % (length * width * cost)
+puts "Total cost: " + total.to_s
