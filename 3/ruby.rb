@@ -1,10 +1,10 @@
 puts "Find all prime factors of a number!"
-puts "Enter a number: (max 5000)"
+puts "Enter a number: "
 digit = 0
 while true
   digit = gets.chomp.to_i
-  break if digit.between?(1,5000)
-  puts "Must be a number between 0 and 5001!"
+  break if digit > 0
+  puts "Must be a number greater than 0!"
   puts "Enter a number: "
 end
 
