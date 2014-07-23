@@ -9,15 +9,11 @@ while true
 end
 
 factors = []
-factors << 1
-(2..digit/2).each do |i|
-  puts "looping #{digit}"
-  (2..digit/2).each do |i2|
-    if digit % i2 == 0
-      factors << i2 if !factors.include? i2
-      digit = digit / i2
-      next
-    end
+for i in 2..digit
+  while digit % i == 0
+    factors << i
+    digit = digit / i
+    break if digit == 1
   end
 end
 
